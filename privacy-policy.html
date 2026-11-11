@@ -3,83 +3,98 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Haven Privacy Policy</title>
-<meta name="description" content="How Haven handles your data.">
+<title>SteadPace Privacy Policy</title>
+<meta name="description" content="How SteadPace handles your data.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-<nav><a href="./">Haven</a><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a><a href="delete-account.html">Delete account</a></nav>
-  <h1>Haven Privacy Policy</h1>
-  <p class="muted">Effective: November 4, 2026 · App: Haven (com.haven.campuslife)</p>
+<nav><a href="./">SteadPace</a><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a><a href="delete-account.html">Delete account</a></nav>
+  <h1>SteadPace Privacy Policy</h1>
+  <p class="muted">Effective: November 10, 2026 · App: SteadPace (com.steadpace.app)</p>
 
-  <p>Haven is a personal planner for college students: budget, classes, deadlines, shifts and shared expenses. By default everything stays on your device. Roommate sync is optional; this policy explains exactly what changes if you turn it on.</p>
+  <p>SteadPace is a personal planner for college students and anyone who shares a home: budget, classes, deadlines, work and pay, and shared household expenses. Your planner is stored on your phone. Two features are optional and use our server: <strong>school search</strong> and <strong>household sharing</strong>. This policy lists exactly what each one sends and keeps.</p>
+  <p>SteadPace has no ads, no analytics and no third-party tracking SDKs. We never sell your data or share it for advertising.</p>
 
-  <h2>If you don't use roommate sync</h2>
-  <p><strong>We collect nothing.</strong> Haven has no ads, no analytics and no third-party tracking SDKs. Everything you enter is saved only in the app's private storage on your phone:</p>
+  <h2>1. What stays on your phone</h2>
+  <p>Everything below is saved only in the app's private, encrypted storage on your phone. We never receive it:</p>
   <ul>
     <li>The first name you choose to enter (optional)</li>
     <li>Budget limits, transactions, recurring bills and paychecks, and notes</li>
+    <li>Whether you're a student and, if so, which school you picked and whether you live on campus, off campus or at home</li>
     <li>Class schedule, reminders and calendar events, including events you import from a .ics file</li>
-    <li>Work shifts, hourly wage (optional) and earnings totals</li>
-    <li>Names of roommates you add to the offline split tracker</li>
+    <li>Work shifts, hourly wage (optional), earnings totals, and whether you're paid hourly or salary</li>
+    <li>Names of roommates you add to the on-phone split tracker</li>
+    <li>Your answer to the birth month and year question (kept only as an age group; see section 6)</li>
     <li>Theme, appearance and security preferences</li>
   </ul>
 
-  <h2>If you use roommate sync (optional)</h2>
-  <p>Roommate sync lets people in the same household share expenses and chat. To make that work, some data is stored on our server, which is hosted by Supabase (United States). Only what is listed here leaves your phone:</p>
+  <h2>2. School search (optional)</h2>
+  <p>When you answer "Are you a student?" and search for your school, the letters you type are sent to our server to search the public U.S. Department of Education list of colleges. No account, name or other planner data is attached. Like any web request, our hosting provider sees your IP address and the time of the request (see section 4). The school you pick is saved only on your phone unless you join the classmate directory.</p>
+
+  <h2>3. Household sharing (optional)</h2>
+  <p>Household sharing lets people who live together share expenses, lists and chat. To make that work, this data is stored on our server, hosted by Supabase in the United States:</p>
   <ul>
-    <li><strong>Email address</strong>: to sign you in with a one-time code. It is never shown to roommates, never used for marketing and never sold.</li>
-    <li><strong>Display name and emoji avatar</strong>: shown to people in your households.</li>
-    <li><strong>Household data</strong>: household names, who is a member, invite codes (stored only as a one-way hash), shared expenses, who owes what, and payment status.</li>
+    <li><strong>An anonymous account.</strong> No email or phone number. SteadPace creates a private account on your phone; its sign-in session, kept in your phone's secure keystore (Android Keystore / iOS Keychain), is the only key to it.</li>
+    <li><strong>Display name and emoji avatar</strong>, shown to people in your households.</li>
+    <li><strong>Household data</strong>: household names, members, the household's time zone (so repeating bills and tasks roll over at your local midnight), invite codes (stored only as a one-way hash), shared expenses (including receipt items if you split by item), repeating bills, who owes what and payment status, shared grocery, chore and meal lists (including repeating tasks), house info notes you choose to add, and an optional shared monthly budget.</li>
+    <li><strong>Classmate directory (optional, off by default; college students 18 and older)</strong>: your school, first name, last initial and class year, if you turn on "Let classmates find me." <strong>We store only your last initial, never your full last name.</strong> People at your school can find you by your first name (optionally with your last initial) and see only your first name, last initial and class year. Your searches are rate-limited and the search log is kept for one day to stop abuse. Roommate requests you send or receive (including the note) are kept up to 30 days.</li>
     <li><strong>Household messages</strong>, including automatic payment reminders ("nudges").</li>
-    <li><strong>Reports and blocks</strong>: if you report a message, a copy of it, who sent it and which household it came from are kept so we can review it.</li>
+    <li><strong>Reports and blocks</strong>: if you report a message or a roommate request, a copy of it, who sent it and which household it came from are kept up to 90 days so we can review it. When a report comes in, we get an alert through a notification service; the alert contains only the type of report and its ID, never the reported text or anyone's name.</li>
     <li><strong>Terms acceptance</strong>: which version of the <a href="terms.html">Terms of Use</a> you accepted and when.</li>
-    <li>Standard server logs (such as IP address and time of a request), kept by our hosting provider for security and abuse prevention.</li>
   </ul>
-  <p><strong>Who can see it:</strong> only members of the same household, enforced by access rules on the server. Data is encrypted in transit (TLS) and at rest by our hosting provider. It is not end-to-end encrypted: the developer can technically access it, and only does so to operate the service, investigate reports, or when required by law. We never sell or share it for advertising.</p>
-  <p><strong>What never syncs:</strong> your personal budget, transactions, classes, reminders, calendar, shifts, wage and notes stay on your phone even when you use roommate sync.</p>
-  <p><strong>Sign-in on your phone:</strong> your sign-in session is stored in your phone's secure keystore (Android Keystore / iOS Keychain).</p>
+  <p><strong>Who can see it:</strong> only members of the same household, enforced by access rules on the server. Data is encrypted in transit (TLS) and at rest by our hosting provider. It is not end-to-end encrypted: the developer can technically access it, and only does so to operate the service, investigate reports, or when required by law.</p>
+  <p><strong>What never syncs:</strong> your personal budget, transactions, classes, reminders, calendar, shifts, wage and notes stay on your phone even when you use household sharing.</p>
+  <p><strong>House info is not a password vault:</strong> house info notes are visible to everyone in your household and are not end-to-end encrypted. Don't store bank, email or other account passwords there.</p>
 
-  <h2>How your on-device data is protected</h2>
+  <h2>4. Server logs</h2>
+  <p>Our hosting provider keeps standard request logs (such as IP address and time) for security and abuse prevention, for a short period set by the provider. We don't use them to track you or build a profile.</p>
+
+  <h2>5. How your on-device data is protected</h2>
   <ul>
-    <li><strong>Encrypted at rest:</strong> Haven encrypts everything it saves with AES-256-GCM. The key is kept in your phone's secure hardware keystore, is never exported, and never leaves the device.</li>
-    <li><strong>Not backed up off the device:</strong> Haven excludes its data from Android cloud backup and device-to-device transfer, and its key is not synced to iCloud.</li>
+    <li><strong>Encrypted at rest:</strong> SteadPace encrypts everything it saves with AES-256-GCM. The key is kept in your phone's secure hardware keystore, is never exported, and never leaves the device.</li>
+    <li><strong>Not backed up off the device:</strong> SteadPace excludes its data from Android cloud backup and device-to-device transfer, and its key is not synced to iCloud.</li>
     <li><strong>Encrypted backups (optional):</strong> you can export a backup file locked with a passphrase you choose (PBKDF2 + AES-256-GCM). You decide where the file goes; we never receive it and cannot recover a forgotten passphrase.</li>
-    <li><strong>App lock (optional):</strong> requires your fingerprint, face or phone PIN to open Haven. Biometric data is handled by your phone and never reaches Haven.</li>
+    <li><strong>Timesheet exports (optional):</strong> you can export the shifts you logged as a spreadsheet (.csv) or printable page (.html). These files are created on your phone and are <em>not</em> encrypted, so anyone you send them to can read them. You decide where they go; we never receive them.</li>
+    <li><strong>App lock and biometrics (optional):</strong> App lock asks your phone's screen lock (fingerprint, face or PIN) to open SteadPace. Your phone's operating system performs the check and tells the app only whether it passed. SteadPace never accesses, collects, captures, stores or shares fingerprints, face geometry or any other biometric identifier or biometric information, and neither do we.</li>
+    <li><strong>Home-screen widget (Android, optional):</strong> if you add the widget, it shows the amount left in your budget and your next class or task. SteadPace saves only those few lines in the app's private storage. With App lock on, the widget shows "Locked" instead.</li>
     <li><strong>Private notifications:</strong> on Android, reminder text is hidden on a secure lock screen.</li>
-    <li><strong>Optional privacy screen:</strong> hides Haven in the recent-apps view and blocks screenshots.</li>
+    <li><strong>Optional privacy screen:</strong> hides SteadPace in the recent-apps view and blocks screenshots.</li>
   </ul>
 
-  <h2>Permissions</h2>
+  <h2>6. Children and teens</h2>
+  <p>SteadPace is meant for college students and adults sharing a home and is not directed at children under 13. Before any household-sharing account is created, the app asks everyone for their birth month and year. The answer is checked on the phone, kept there only as an age group, and never sent to us. People under 13 can use the planner on their phone but not household sharing, so we don't collect personal information from them (school search sends only the letters typed, with no account or name attached). People aged 13 to 17 need a parent or guardian to agree to the Terms, can join households only by invite code, and can't use the classmate directory. If you believe a child under 13 has given us personal information, contact us and we will delete it.</p>
+
+  <h2>7. Permissions</h2>
   <ul>
-    <li><strong>Internet:</strong> used only for roommate sync, and only after you sign in.</li>
+    <li><strong>Internet:</strong> used only for school search and household sharing. The planner works offline.</li>
     <li><strong>Notifications:</strong> alerts before deadlines and bills you create. Scheduled on your device; no push server is involved.</li>
     <li><strong>Alarms &amp; reminders (Android, optional):</strong> exact-minute reminders, only if you turn on "Precise reminder timing."</li>
-    <li><strong>Biometrics (optional):</strong> only if you turn on App lock.</li>
+    <li><strong>Biometrics (optional):</strong> only if you turn on App lock; handled entirely by your phone's operating system (see section 5).</li>
     <li><strong>Vibration:</strong> subtle haptic feedback.</li>
-    <li><strong>Files:</strong> only a .ics calendar or a Haven backup file you choose, read on your device.</li>
+    <li><strong>Files:</strong> only a .ics calendar or a backup file you choose, read on your device.</li>
   </ul>
 
-  <h2>Deleting your data</h2>
+  <h2>8. Deleting your data</h2>
   <ul>
-    <li><strong>Roommate sync account:</strong> open Haven → <em>Roommates</em> → <em>Open</em> → <em>People</em> → <strong>Delete account</strong> (see our <a href="delete-account.html">account deletion page</a>). This immediately and permanently deletes your account, profile, memberships, messages and your shares of expenses from our server. Expenses you paid for stay visible to your former household with you shown as "Former member". You can also email us to request deletion.</li>
-    <li><strong>Leaving a household</strong> removes your access to it; a household with no members left is deleted.</li>
-    <li><strong>On-device data:</strong> <em>Theme</em> tab → <em>Your data &amp; privacy</em> → <strong>Erase all data</strong> deletes your data and replaces the encryption key. Uninstalling also removes it.</li>
-    <li>Reported-message copies are kept up to 90 days for safety review, then deleted.</li>
+    <li><strong>Household account:</strong> open SteadPace → <em>Household</em> → <em>People</em> → <strong>Delete account</strong> (see our <a href="delete-account.html">account deletion page</a>). This immediately and permanently deletes your account, display name, memberships, directory listing, roommate requests, chat messages, your shares of expenses, people you blocked, and house info notes you wrote. Expenses you paid and grocery, chore and meal items you added stay in your former household's shared history, labeled "Former member", so its records still make sense to the people who remain. You can also email us to request deletion.</li>
+    <li><strong>Leaving a household</strong> removes your access to it; a household with no members left is deleted with all of its data.</li>
+    <li><strong>Directory listing:</strong> <em>Household</em> → <em>People</em> → <em>Directory settings</em> → <strong>Remove me from the directory</strong>, or answer "No" to "Are you a student?" in <em>Me</em>.</li>
+    <li><strong>On-device data:</strong> <em>Me</em> tab → <em>Your data &amp; privacy</em> → <strong>Erase all data</strong> deletes your data and replaces the encryption key. Uninstalling also removes it.</li>
+    <li>Report copies are kept up to 90 days for safety review, then deleted.</li>
   </ul>
 
-  <h2>Messages and safety</h2>
-  <p>Text you post for your household (messages, names, expense titles) is automatically checked against a list of objectionable terms before it is saved; this check runs on our server and nothing is shared with third parties. You can report any household message and block any member from the chat. We review reports within 24 hours and may remove content or accounts that violate our rules (harassment, threats, hate, sexual content, spam). Contact us at the address below to report urgent issues.</p>
+  <h2>9. Your choices and rights</h2>
+  <p>You can see and correct your shared data in the app, remove yourself from the directory, leave a household, or delete your account at any time. To ask for a copy of the data we hold about your account, or for help with any request, email us; we answer within 45 days. Depending on where you live, you may have additional rights under state privacy laws, and we will honor them.</p>
 
-  <h2>Children</h2>
-  <p>Haven is intended for college students and is not directed at children under 13. We do not knowingly collect information from children under 13; if you believe a child has created an account, contact us and we will delete it.</p>
+  <h2>10. Messages and safety</h2>
+  <p>Text you post for your household (messages, names, expense titles, notes) is automatically checked against a list of objectionable terms before it is saved; this check runs on our server and nothing is shared with third parties. You can report any household message and block any member. We review reports within 24 hours and may remove content or accounts that violate our rules (harassment, threats, hate, sexual content, spam). Contact us at the address below to report urgent issues.</p>
 
-  <h2>Changes</h2>
-  <p>If this policy changes, we will update this page and the effective date above, and tell you in the app before any new kind of data leaves your device.</p>
+  <h2>11. Changes</h2>
+  <p>If this policy changes, we will update this page and the effective date above, and tell you in the app before any new kind of data leaves your phone.</p>
 
   <h2>Contact</h2>
-  <p>Questions: <a href="mailto:SUPPORT_EMAIL_HERE">SUPPORT_EMAIL_HERE</a></p>
+  <p>Questions or requests: <a href="mailto:steadpace1@gmail.com">steadpace1@gmail.com</a></p>
 </main>
 </body>
 </html>
